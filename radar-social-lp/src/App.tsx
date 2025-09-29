@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-import Home from  './sections/Home'
+import Home from    './sections/Home';
 import QuemSomos from './sections/QuemSomos';
 import Blog from './sections/Blog';
 

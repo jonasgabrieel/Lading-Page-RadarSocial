@@ -8,7 +8,7 @@ const QuemSomos: React.FC = () => {
           O que é o RadarSocial?
         </h2>
         <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-          O RadarSocial nasceu da paixão em transformar a sociedade através da tecnologia. Nossa missão é facilitar a conexão entre projetos sociais, ONGs e indivíduos que desejam fazer a diferença, seja através de doações, voluntariado ou simplesmente divulgando causas importantes.
+          O Radar Social é um aplicativo desenvolvido a partir da pesquisa acadêmica que criou a escala SRL (Social Readiness Level) – uma metodologia inédita para mapear e avaliar o nível de maturidade de projetos de inovação social. Nascemos do desejo detransformar conhecimento científico em impacto real.
         </p>
 
         <div className="mt-12">
