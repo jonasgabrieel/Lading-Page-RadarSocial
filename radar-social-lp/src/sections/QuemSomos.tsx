@@ -5,6 +5,7 @@ import antonioImg from '../assets/images/team/antonio.jpg';
 import mariaImg from '../assets/images/team/maria.jpg';
 import camilaImg from '../assets/images/team/camila.jpg';
 import luanImg from '../assets/images/team/luan.jpg';
+import bernardoImg from '../assets/images/team/bernardo.jpg';
 import rodrigoImg from '../assets/images/team/rodrigo.jpg';
 import leonardoImg from '../assets/images/team/leonardo.jpg';
 import jonasImg from '../assets/images/team/jonas.jpg';
@@ -51,6 +52,12 @@ const teamMembers = [
     role: 'Desenvolvedor de Software',
     imageUrl: jonasImg,
     socials: { email: 'jonasgabrieel@gmail.com', instagram: 'https://instagram.com/jhonn_john', linkedin: 'https://linkedin.com/in/jonas-gabriel-993a371b7', lattes: 'http://lattes.cnpq.br/3754147836639068' },
+  },
+  { 
+    name: 'Vicent Bernardo Alves Santos',
+    role: 'Prof. Msc. em Design',
+    imageUrl: bernardoImg,
+    socials: {email: 'vicentbernardoalves@gmail.com', instagram: 'https://instagram.com/vicenttbernardo', linkedin: 'https://linkedin.com/in/vicentbernardo/', lattes: 'http://lattes.cnpq.br/2132383905871497',},
   },
 ];
 
