@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
                                 href={link.href}
                                 target={link.target || '_self'}
                                 rel={link.target === '_blank' ? 'noopener noreferrer' : undefined}
-                                className="font-medium text-[#3F2B80] transition-all duration-300 hover:text-[#3F2B80] hover:underline"
+                                className="font-medium text-brand-purple transition-all duration-300 hover:text-[#3F2B80] hover:underline"
                             >
                                 {link.title}
                             </a>
@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
 
                 <a
                     href="#download"
-                    className="bg-[#FFCD00] text-gray-900 font-semibold px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300"
+                    className="bg-brand-yellow text-gray-900 font-semibold px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300"
                 >
                     Baixar o App
                 </a>
