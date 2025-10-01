@@ -6,27 +6,9 @@ import homeImage from '../assets/images/home-image.png';
 
 import PhoneImage from '../assets/images/phone.png';
 import PhoneImage2 from '../assets/images/phone2.png';
-import OS1 from '../assets/images/item1.png';
-import OS2 from '../assets/images/item2.png';
-import OS3 from '../assets/images/item3.png';
+
 import FaleImg from '../assets/images/fale.png';
-
-
-
-const featureIcons = [
-  {
-    src: OS1,
-    alt: 'Ícone de um mapa',
-  },
-  {
-    src: OS2,
-    alt: 'Ícone de um gráfico de diagnóstico',
-  },
-  {
-    src: OS3,
-    alt: 'Ícone de pessoas se conectando',
-  }
-];
+import seloODS from '../assets/images/seloODS.png';
 
 const steps = [
   {
@@ -81,12 +63,17 @@ const Home: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="flex-1 flex justify-center md:justify-end mt-12 md:mt-0">
+          <div className="flex-1 flex flex-col items-center md:items-center gap-4 mt-12 md:mt-0">
             <img
               src={homeImage}
               alt="Ilustração do Radar Social"
               className="max-w-full h-auto rounded-lg max-w-[600px]"
             />
+            <img 
+                    src={seloODS} 
+                    className="h-30 w-auto "
+                    alt="Selo dos Objetivos de Desenvolvimento Sustentável" 
+                  />
           </div>
         </div>
       </section>
@@ -146,15 +133,13 @@ const Home: React.FC = () => {
             </p>
 
             <div className="flex justify-start items-center gap-x-4 py-4">
-              {featureIcons.map((icon) => (
                 <div className="flex flex-col items-center">
                   <img 
-                    src={icon.src} 
-                    alt={icon.alt}
-                    className="h-25 w-25 object-contain" 
+                    src={seloODS} 
+                    className="h-30 w-auto "
+                    alt="Selo dos Objetivos de Desenvolvimento Sustentável" 
                   />
                 </div>
-              ))}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

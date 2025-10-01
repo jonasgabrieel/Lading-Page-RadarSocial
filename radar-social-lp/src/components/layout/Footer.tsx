@@ -23,9 +23,9 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-white text-white">
-      <div className="container mx-auto py-16 px-4">
+      <div className="container mx-auto py-5">
         {/* Grid principal com 4 colunas */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
           
           {/* Coluna 1: Logo e Descrição */}
           <div className="space-y-4 translate-y-10">
