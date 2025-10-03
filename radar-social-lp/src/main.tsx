@@ -7,24 +7,27 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.tsx';
 import Home from './pages/Home.tsx';
 import QuemSomos from './pages/QuemSomos.tsx';
+import Blog from './pages/Blog.tsx';
+
 import './index.css';
 
 // Aqui criamos o mapa de navegação
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />, // O App será o layout principal (com a Navbar)
+    element: <App />, 
     children: [
       {
-        path: '/', // Rota para a página inicial
+        path: '/',
         element: <Home />,
       },
       {
-        path: '/quem-somos', // Rota para a página "Quem Somos"
+        path: '/quem-somos',
         element: <QuemSomos />,
       },
-      // Futuramente, você pode adicionar outras rotas aqui:
-      // { path: '/blog', element: <Blog /> },
+      {
+        path: '/blog', element: <Blog /> 
+      },
     ],
   },
 ]);
