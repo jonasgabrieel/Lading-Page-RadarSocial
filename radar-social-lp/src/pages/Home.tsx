@@ -180,9 +180,7 @@ const Home: React.FC = () => {
               Tire suas dúvidas!
             </p>
             
-            {/* Nota: Este é um formulário visual. A lógica para enviar os dados 
-              precisaria ser implementada (ex: com Netlify Forms, Formspree, ou um backend).
-            */}
+
             <form className="flex flex-col gap-6">
               <input 
                 type="text" 

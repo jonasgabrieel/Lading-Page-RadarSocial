@@ -1,5 +1,3 @@
-// src/main.tsx
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -11,7 +9,6 @@ import Blog from './pages/Blog.tsx';
 
 import './index.css';
 
-// Aqui criamos o mapa de navegação
 const router = createBrowserRouter([
   {
     path: '/',

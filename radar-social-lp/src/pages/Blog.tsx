@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Conteúdo de exemplo para o blog
 const blogPosts = [
   {
     title: '5 Maneiras de Mudar o Mundo a Partir de Casa',
