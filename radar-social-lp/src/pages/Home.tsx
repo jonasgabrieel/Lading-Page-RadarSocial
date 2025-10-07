@@ -9,6 +9,7 @@ import PhoneImage2 from '../assets/images/phone2.png';
 
 import FaleImg from '../assets/images/fale.png';
 import seloODS from '../assets/images/seloODS.png';
+import FaleConosco from '../components/faleconosco';
 
 const steps = [
   {
@@ -169,65 +170,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
-      <section id="fale-conosco" className="bg-brand-purple text-gray-800 py-20 px-4">
-        <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
-
-          <div className="flex flex-col">
-            <h2 className="font-pt-sans text-xl md:text-2xl text-brand-orange mb-8">
-              FALE CONOSCO
-            </h2>
-            <p className="font-heading text-5xl md:text-6xl text-white mb-8 z-10">
-              Tire suas dúvidas!
-            </p>
-
-
-            <form className="flex flex-col gap-6">
-              <input
-                type="text"
-                name="name"
-                placeholder="Nome"
-                aria-label="Seu nome"
-                className="w-full bg-white px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-shadow"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                aria-label="Seu e-mail"
-                className="w-full bg-white px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-shadow"
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Telefone (opcional)"
-                aria-label="Seu telefone"
-                className="w-full bg-white px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-shadow"
-              />
-              <textarea
-                name="message"
-                placeholder="Mensagem"
-                aria-label="Sua mensagem"
-                rows={5}
-                className="w-full bg-white px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-shadow"
-              ></textarea>
-              <button
-                type="submit"
-                className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 self-start"
-              >
-                Enviar
-              </button>
-            </form>
-          </div>
-
-          <div className="hidden md:flex items-center justify-center">
-            <img
-              src={FaleImg}
-              alt="Pessoas em uma reunião de trabalho"
-              className="rounded-lg  max-w-full h-auto"
-            />
-          </div>
-        </div>
-      </section>
+      <FaleConosco
+      />
     </>
   );
 };
