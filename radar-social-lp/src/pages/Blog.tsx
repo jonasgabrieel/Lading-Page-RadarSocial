@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Filter } from 'lucide-react'; 
+import { Search, Filter } from 'lucide-react';
 import efect from '../assets/images/efect.png';
 import phone from '../assets/images/phone.png';
 
@@ -32,36 +32,36 @@ const blogPosts = [
 const Blog: React.FC = () => {
   return (
     <>
-      <section className="bg-brand-yellow py-16 px-4 relative overflow-hidden">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+      <section className="bg-brand-yellow pt-24 pb-16 px-4 relative overflow-hidden">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
 
           <div className="flex-1 text-center md:text-left space-y-6">
 
-            <div className="flex justify-center md:justify-start gap-4 mb-4">
+            <div className="flex justify-center md:justify-start gap-4">
               <span className="bg-white text-brand-orange font-semibold px-4 py-2 rounded-full shadow-md">
                 Tecnologia
               </span>
               <span className="bg-brand-orange text-brand-purple font-semibold px-4 py-2 rounded-full shadow-md">
                 Inovação
               </span>
-              <span className="bg-brand-purple text-white font-semibold px-4 py-2 rounded-full shadow-md ">
+              <span className="bg-brand-purple text-white font-semibold px-4 py-2 rounded-full shadow-md">
                 Sociedade
               </span>
             </div>
 
-            <h1 className="font-heading text-6xl md:text-7xl text-white leading-tight mt-30">
+            <h1 className="font-heading text-6xl md:text-8xl text-white leading-tight">
               Blog
             </h1>
-            <p className="font-pt-sans text-xl md:text-3xl  text-brand-purple max-w-lg md:max-w-md mx-auto md:mx-0">
+            <p className="font-pt-sans text-2xl text-brand-purple max-w-lg md:max-w-md mx-auto md:mx-0">
               Veja artigos, notícias e atualizações sobre o Radar Social e ações de Inovação Social na UFS.
             </p>
           </div>
 
-          <div className="flex-1 flex justify-center md:justify-end mt-8 md:mt-30">
+          <div className="flex-1 flex justify-center md:justify-end mt-8 md:mt-0">
             <img
               src={blogImage}
               alt="Pessoas lendo e colaborando"
-              className="max-w-full h-auto rounded-lg "
+              className="max-w-full h-auto rounded-lg"
             />
           </div>
         </div>
@@ -69,10 +69,8 @@ const Blog: React.FC = () => {
 
       <section id="blog-posts" className="bg-gray-50 py-20 px-4">
         <div className="container mx-auto">
-
-          <div className="mb-12 flex justify-center">
-            <div className="flex gap-4 w-full max-w-xl mb-18">
-              {/* Barra de Pesquisa */}
+          <div className="mb-16 flex justify-center">
+            <div className="flex gap-4 w-full max-w-xl">
               <div className="relative flex-grow">
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <Search className="h-5 w-5 text-gray-400" />
@@ -83,8 +81,7 @@ const Blog: React.FC = () => {
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-purple"
                 />
               </div>
-              {/* Ícone de Filtro */}
-              <button className="flex-shrink-0 bg-white p-3 border border-gray-300 rounded-lg shadow-sm hover:bg-brand-yellow transition-colors">
+              <button className="flex-shrink-0 bg-white p-3 border border-gray-300 rounded-lg shadow-sm hover:bg-gray-100 transition-colors">
                 <Filter className="h-6 w-6 text-gray-600" />
               </button>
             </div>
@@ -106,7 +103,7 @@ const Blog: React.FC = () => {
                   </p>
                   <Link
                     to={post.link}
-                    className="font-sans text-brand-purple hover:underline font-medium transition-colors"
+                    className="font-sans text-brand-orange hover:underline font-medium transition-colors"
                   >
                     Leia a matéria &rarr;
                   </Link>
@@ -114,10 +111,9 @@ const Blog: React.FC = () => {
               </div>
             ))}
           </div>
-
           <div className="mt-16 flex justify-center">
             <button
-              className="bg-brand-purple text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-opacity-90 transition-all transform hover:scale-105"
+              className="bg-brand-purple text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-brand-purple/90 transition-all transform hover:scale-105" // 'hover:bg-opacity-90' melhorado
             >
               Ver mais matérias
             </button>
@@ -125,49 +121,43 @@ const Blog: React.FC = () => {
         </div>
       </section>
       <section id="download" className="bg-black text-white py-20 px-4 relative overflow-hidden">
-      {/* Imagem de fundo com efeito de textura */}
-      <img
-        src={efect}
-        alt="Background abstrato"
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-60" 
-      />
-
-      <div className="relative z-10 container mx-auto grid md:grid-cols-2 gap-16 items-center">
-        
-        {/* Coluna da Esquerda: Título, Texto e Botões */}
-        <div className="flex flex-col text-center md:text-left items-center md:items-start">
-          <h2 className="font-heading text-5xl md:text-7xl text-white mb-6">
-            Baixe Agora!
-          </h2>
-          <p className="font-pt-sans text-lg text-xl md:text-2xl text-white leading-relaxed max-w-md mb-18">
-            Nascemos do desejo de transformar conhecimento científico em impacto real!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="https://seuapp.com.br/webapp" // Link para a versão web
-              className="font-sans bg-brand-orange text-white text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105"
-            >
-              USAR NA WEB
-            </a>
-            <a
-              href="https://seuapp.com.br/download" // Link para baixar o app
-              className="font-sans bg-brand-yellow text-brand-orange text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105"
-            >
-              BAIXAR O APP
-            </a>
+        <img
+          src={efect}
+          alt="Background abstrato"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-60"
+        />
+        <div className="relative z-10 container mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div className="relative z-10 flex flex-col text-center md:text-left items-center md:items-start">
+            <h2 className="font-heading text-5xl md:text-7xl text-white mb-6">
+              Baixe Agora!
+            </h2>
+            <p className="font-pt-sans text-xl md:text-2xl text-white leading-relaxed max-w-md mb-8">
+              Nascemos do desejo de transformar conhecimento científico em impacto real!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://seuapp.com.br/webapp"
+                className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105" // Cor do texto ajustada
+              >
+                USAR NA WEB
+              </a>
+              <a
+                href="https://seuapp.com.br/download"
+                className="font-sans bg-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105" // Cor do texto ajustada
+              >
+                BAIXAR O APP
+              </a>
+            </div>
+          </div>
+          <div className="relative min-h-[400px] md:min-h-[500px]">
+            <img
+              src={phone}
+              alt="Mockup do aplicativo Radar Social"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-20 h-[480px] md:h-[700px] w-auto"
+            />
           </div>
         </div>
-
-          <div className="relative min-h-[400px] mt-12 md:mt-0">
-          <img 
-            src={phone} 
-            alt="Mockup do aplicativo Radar Social"
-            className="absolute bottom-0 translate-y-72  h-[800px] w-auto"
-          />
-        </div>
-
-      </div>
-    </section>
+      </section>
     </>
   );
 };

@@ -32,18 +32,20 @@ const steps = [
 const Home: React.FC = () => {
   return (
     <>
-      <section id="home" className="relative min-h-screen flex items-center justify-center bg-brand-purple py-20 px-4 overflow-hidden">
+      <section id="home" className="relative min-h-screen flex items-center justify-center bg-brand-purple pt-32 pb-16 md:py-20 px-4 overflow-hidden">
         <img
           src={backgroundImage}
           alt="Background abstrato"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-70"
         />
-        <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+
+        <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-center gap-16">
+
           <div className="flex-1 text-center md:text-left">
             <h1 className="font-heading text-5xl md:text-7xl text-white leading-tight mb-6">
               O que é o <br />Radar Social?
             </h1>
-            <p className="font-sans text-lg text-justify md:text-xl text-white mb-10 max-w-xl">
+            <p className="font-sans text-lg text-justify md:text-left md:text-xl text-white mb-10 max-w-xl mx-auto md:mx-0">
               O Radar Social é um aplicativo desenvolvido a partir da pesquisa acadêmica que criou a escala SRL (Social Readiness Level) – uma metodologia inédita para mapear e avaliar o nível de maturidade de projetos de inovação social. Nascemos do desejo de transformar conhecimento científico em impacto real.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -63,22 +65,22 @@ const Home: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="flex-1 flex flex-col items-center md:items-center gap-4 mt-12 md:mt-0">
+
+          <div className="flex-1 flex flex-col items-center gap-6">
             <img
               src={homeImage}
               alt="Ilustração do Radar Social"
-              className="max-w-full h-auto rounded-lg max-w-[600px]"
+              className="max-w-full h-auto rounded-lg max-w-[500px]"
             />
-            <img 
-                    src={seloODS} 
-                    className="h-30 w-auto "
-                    alt="Selo dos Objetivos de Desenvolvimento Sustentável" 
-                  />
+            <img
+              src={seloODS}
+              className="h-28 w-auto"
+              alt="Selo dos Objetivos de Desenvolvimento Sustentável"
+            />
           </div>
         </div>
       </section>
-
-      <section className="relative bg-black text-white pt-2 pb-2 px-4 overflow-hidden">
+      <section className="relative bg-black text-white py-20 px-4 overflow-hidden">
 
         <img
           src={backgroundImage}
@@ -107,45 +109,43 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center mt-12 md:mt-0">
+          <div className="flex items-center justify-center">
             <img
               src={PhoneImage}
               alt="Foto do aplicativo em um celular"
-              className="rounded-lg shadow-2xl ... translate-y-36"
+              className="rounded-lg shadow-2xl max-w-full h-auto"
             />
           </div>
         </div>
       </section>
-      <section id="inovacao" className="bg-brand-yellow text-brand-purple pt-15 pb-10 px-4">
+      <section id="inovacao" className="bg-brand-yellow text-brand-purple py-20 px-4"> 
         <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
-          
+
           <div className="flex flex-col gap-8 text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <div>
                 <h2 className="font-heading text-6xl md:text-7xl leading-none">Radar</h2>
                 <h2 className="font-heading text-6xl md:text-7xl leading-none">Social</h2>
               </div>
-              <span className="font-heading text-6xl md:text-7xl font-bold ">é inovação!</span>
+              <span className="font-heading text-6xl md:text-7xl font-bold">é inovação!</span>
             </div>
 
-            <p className="font-sans text-justify text-xl md:text-2xl leading-relaxed max-w-lg mx-auto md:mx-0">
+            <p className="font-pt-sans text-justify text-xl md:text-2xl leading-relaxed max-w-lg mx-auto md:mx-0">
               Acreditamos que a inovação social é motor de mudança, e que, ao dar visibilidade e mensurar seu impacto, criamos caminhos mais sólidos para transformar realidades. O Radar Social está alinhado aos Objetivos de Desenvolvimento Sustentável:
             </p>
 
-            <div className="flex justify-start items-center gap-x-4 py-4">
-                <div className="flex flex-col items-center">
-                  <img 
-                    src={seloODS} 
-                    className="h-30 w-auto "
-                    alt="Selo dos Objetivos de Desenvolvimento Sustentável" 
-                  />
-                </div>
+            <div className="hidden md:flex justify-center md:justify-start items-center py-4">
+              <img
+                src={seloODS}
+                className="h-28 w-auto" 
+                alt="Selo dos Objetivos de Desenvolvimento Sustentável"
+              />
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
                 href="https://seuapp.com.br/download"
-                className="font-pt-sans bg-brand-orange text-white text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105"
+                className="font-sans bg-brand-orange text-white text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105" // Corrigido 'font-pt-sans'
               >
                 USAR NA WEB
               </a>
@@ -153,23 +153,23 @@ const Home: React.FC = () => {
                 href="https://seusistema.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-pt-sans bg-black border-2 text-brand-yellow text-lg px-8 py-3 rounded-full font-bold hover:bg-brand-purple hover:text-white transition-all duration-300 transform hover:scale-105"
+                className="font-sans bg-black border-2 text-brand-yellow text-lg px-8 py-3 rounded-full font-bold hover:bg-brand-purple hover:text-white transition-all duration-300 transform hover:scale-105" // Corrigido 'font-pt-sans'
               >
                 BAIXAR O APP
               </a>
             </div>
           </div>
 
-          <div className="flex items-center justify-center mt-12 md:mt-0">
-            <img 
-              src={PhoneImage2} 
+          <div className="flex items-center justify-center">
+            <img
+              src={PhoneImage2}
               alt="Pessoas colaborando em um projeto de inovação"
-              className="  max-w-full h-auto"
+              className="max-w-full h-auto"
             />
           </div>
         </div>
       </section>
-       <section id="fale-conosco" className="bg-brand-purple text-gray-800 py-20 px-4">
+      <section id="fale-conosco" className="bg-brand-purple text-gray-800 py-20 px-4">
         <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           <div className="flex flex-col">
@@ -179,31 +179,31 @@ const Home: React.FC = () => {
             <p className="font-heading text-5xl md:text-6xl text-white mb-8 z-10">
               Tire suas dúvidas!
             </p>
-            
+
 
             <form className="flex flex-col gap-6">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 name="name"
                 placeholder="Nome"
                 aria-label="Seu nome"
                 className="w-full bg-white px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-shadow"
               />
-              <input 
-                type="email" 
+              <input
+                type="email"
                 name="email"
                 placeholder="Email"
                 aria-label="Seu e-mail"
                 className="w-full bg-white px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-shadow"
               />
-              <input 
-                type="tel" 
+              <input
+                type="tel"
                 name="phone"
                 placeholder="Telefone (opcional)"
                 aria-label="Seu telefone"
                 className="w-full bg-white px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple transition-shadow"
               />
-              <textarea 
+              <textarea
                 name="message"
                 placeholder="Mensagem"
                 aria-label="Sua mensagem"
@@ -220,8 +220,8 @@ const Home: React.FC = () => {
           </div>
 
           <div className="hidden md:flex items-center justify-center">
-            <img 
-              src={FaleImg} 
+            <img
+              src={FaleImg}
               alt="Pessoas em uma reunião de trabalho"
               className="rounded-lg  max-w-full h-auto"
             />
