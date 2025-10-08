@@ -142,7 +142,7 @@ const Blog: React.FC = () => {
                 USAR NA WEB
               </a>
               <a
-                href="https://seuapp.com.br/download"
+                href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
                 className="font-sans bg-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105" // Cor do texto ajustada
               >
                 BAIXAR O APP

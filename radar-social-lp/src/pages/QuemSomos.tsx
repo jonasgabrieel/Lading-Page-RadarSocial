@@ -78,12 +78,12 @@ const QuemSomos: React.FC = () => {
 
 
           <div className="text-center md:text-left">
-            <h2 className="font-pt-sans text-5xl md:text-6xl mb-4">
+            <h2 className="font-pt-sans text-5xl md:text-8xl mb-4">
               A inovação não se
               <br />
               <span className="font-heading text-5xl md:text-7xl">FAZ SOZINHA</span>
             </h2>
-            <p className="font-pt-sans text-lg text-brand-purple md:text-3xl leading-relaxed">
+            <p className="font-pt-sans text-lg text-brand-purple md:text-2xl leading-relaxed">
               Conheça o Radar Social e quem foi responsável por torná-lo possível!
             </p>
           </div>
@@ -157,7 +157,7 @@ const QuemSomos: React.FC = () => {
                 USAR NA WEB
               </a>
               <a
-                href="https://seusistema.com.br"
+                href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-sans bg-black border-2 text-brand-yellow text-lg px-8 py-3 rounded-full font-bold hover:bg-brand-purple hover:text-white transition-all duration-300 transform hover:scale-105" // Corrigido 'font-pt-sans'

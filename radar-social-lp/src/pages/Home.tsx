@@ -1,13 +1,9 @@
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
-
 import backgroundImage from '../assets/images/efect.png';
 import homeImage from '../assets/images/home-image.png';
-
 import PhoneImage from '../assets/images/phone.png';
 import PhoneImage2 from '../assets/images/phone2.png';
-
-import FaleImg from '../assets/images/fale.png';
 import seloODS from '../assets/images/seloODS.png';
 import FaleConosco from '../components/faleconosco';
 
@@ -57,7 +53,7 @@ const Home: React.FC = () => {
                 USAR NA WEB
               </a>
               <a
-                href="https://seusistema.com.br"
+                href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-sans bg-brand-yellow border-2 border-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold hover:bg-brand-orange hover:text-black transition-all duration-300 transform hover:scale-105"
@@ -151,7 +147,7 @@ const Home: React.FC = () => {
                 USAR NA WEB
               </a>
               <a
-                href="https://seusistema.com.br"
+                href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-sans bg-black border-2 text-brand-yellow text-lg px-8 py-3 rounded-full font-bold hover:bg-brand-purple hover:text-white transition-all duration-300 transform hover:scale-105" // Corrigido 'font-pt-sans'

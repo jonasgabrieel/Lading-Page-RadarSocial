@@ -15,8 +15,8 @@ const Footer: React.FC = () => {
   ];
 
   const socialLinks = [
-    { Icon: Instagram, href: '#', label: 'Instagram' },
-    { Icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { Icon: Instagram, href: 'https://www.instagram.com/radarsocial.ufs?igsh=MTk2dXZianBzNHVnOA%3D%3D', label: 'Instagram' },
+    { Icon: Linkedin, href: 'https://www.linkedin.com/company/agitte-se', label: 'LinkedIn' },
   ];
 
   return (
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <div>
-              <a href="#"><img src={googlePlayBadge} alt="Disponível no Google Play" className="h-12 w-auto" /></a>
+              <a href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"><img src={googlePlayBadge} alt="Disponível no Google Play" className="h-12 w-auto" /></a>
             </div>
           </div>
 
