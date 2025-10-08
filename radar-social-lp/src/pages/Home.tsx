@@ -36,7 +36,7 @@ const Home: React.FC = () => {
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-70"
         />
 
-        <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-center gap-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
 
           <div className="flex-1 text-center md:text-left">
             <h1 data-aos="fade-left" className="font-heading text-5xl md:text-7xl text-white leading-tight mb-6">
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-70"
         />
 
-        <div className="relative z-10 container mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
 
           <div>
             <h1 data-aos="fade-right" className="font-heading text-5xl md:text-7xl text-brand-yellow mb-12">
@@ -110,13 +110,13 @@ const Home: React.FC = () => {
             <img
               src={PhoneImage}
               alt="Foto do aplicativo em um celular"
-              className="rounded-lg shadow-2xl max-w-full h-auto"
+              className="rounded-lg shadow-2xl w-200 h-auto"
             />
           </div>
         </div>
       </section>
-      <section id="inovacao" className="bg-brand-yellow text-brand-purple py-20 px-4"> 
-        <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section id="inovacao" className="bg-brand-yellow text-brand-purple py-20 px-4">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
 
           <div className="flex flex-col gap-8 text-center md:text-left">
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
@@ -134,7 +134,7 @@ const Home: React.FC = () => {
             <div data-aos="flip-left" className="hidden md:flex justify-center md:justify-start items-center py-4">
               <img
                 src={seloODS}
-                className="h-28 w-auto" 
+                className="h-28 w-auto"
                 alt="Selo dos Objetivos de Desenvolvimento Sustentável"
               />
             </div>
@@ -142,7 +142,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
                 href="https://seuapp.com.br/download"
-                className="font-pt-sans bg-brand-orange text-white text-lg px-8 py-3 rounded-full font-bold shadow-md hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40" 
+                className="font-pt-sans bg-brand-orange text-white text-lg px-8 py-3 rounded-full font-bold shadow-md hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40"
               >
                 USAR NA WEB
               </a>
@@ -150,7 +150,7 @@ const Home: React.FC = () => {
                 href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-pt-sans bg-black border-2 text-brand-yellow text-lg px-8 py-3 rounded-full font-bold hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40" 
+                className="font-pt-sans bg-black border-2 text-brand-yellow text-lg px-8 py-3 rounded-full font-bold hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40"
               >
                 BAIXAR O APP
               </a>

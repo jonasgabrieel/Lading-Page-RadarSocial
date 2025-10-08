@@ -1,11 +1,11 @@
 // src/components/FaleConosco.tsx
 
 import React from 'react';
-import { useForm} from '@formspree/react';
-import FaleImg from '../assets/images/fale.png'; 
+import { useForm } from '@formspree/react';
+import FaleImg from '../assets/images/fale.png';
 
 const FaleConosco: React.FC = () => {
-  const [state, handleSubmit] = useForm("mldplqqj"); 
+  const [state, handleSubmit] = useForm("mldplqqj");
 
   if (state.succeeded) {
     return (
@@ -20,7 +20,7 @@ const FaleConosco: React.FC = () => {
 
   return (
     <section id="fale-conosco" className="bg-brand-purple text-gray-800 py-20 px-4">
-      <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
         <div className="flex flex-col text-center md:text-left">
           <h2 data-aos="fade-left" className="font-sans text-xl text-brand-orange mb-4">
             FALE CONOSCO

@@ -33,18 +33,18 @@ const Blog: React.FC = () => {
   return (
     <>
       <section className="bg-brand-yellow pt-24 pb-16 px-4 relative overflow-hidden">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
 
           <div className="flex-1 text-center md:text-left space-y-6">
 
-            <div data-aos="zoom-in" className="flex justify-center md:justify-start gap-4">
-              <span className="bg-white text-brand-orange font-semibold px-4 py-2 rounded-full shadow-md">
+            <div className="flex justify-center md:justify-start gap-4">
+              <span data-aos="zoom-in" data-aos-delay="100" className="bg-white text-brand-orange font-semibold px-4 py-2 rounded-full shadow-md">
                 Tecnologia
               </span>
-              <span data-aos="zoom-in" className="bg-brand-orange text-brand-purple font-semibold px-4 py-2 rounded-full shadow-md">
+              <span data-aos="zoom-in" data-aos-delay="300" className="bg-brand-orange text-brand-purple font-semibold px-4 py-2 rounded-full shadow-md">
                 Inovação
               </span>
-              <span data-aos="zoom-in" className="bg-brand-purple text-white font-semibold px-4 py-2 rounded-full shadow-md">
+              <span data-aos="zoom-in" data-aos-delay="600" className="bg-brand-purple text-white font-semibold px-4 py-2 rounded-full shadow-md">
                 Sociedade
               </span>
             </div>
@@ -67,8 +67,10 @@ const Blog: React.FC = () => {
         </div>
       </section>
 
-      <section id="blog-posts" className="bg-gray-50 py-20 px-4">
-        <div className="container mx-auto">
+      <section id="blog-posts" className="bg-gray-50 py-20"> {/* 'px-4' removido */}
+        {/* Padrão de container responsivo aplicado */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <div className="mb-16 flex justify-center">
             <div className="flex gap-4 w-full max-w-xl">
               <div className="relative flex-grow">
@@ -92,6 +94,9 @@ const Blog: React.FC = () => {
               <div
                 key={index}
                 className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+                // Adicionada animação 'fade-up' com delay em cascata para cada card
+                data-aos="fade-up"
+                data-aos-delay={(index % 3) * 100}
               >
                 <img src={post.imageUrl} alt={post.title} className="w-full h-48 object-cover" />
                 <div className="p-6">
@@ -111,6 +116,7 @@ const Blog: React.FC = () => {
               </div>
             ))}
           </div>
+
           <div className="mt-16 flex justify-center">
             <button
               className="bg-brand-purple text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-brand-purple/90 transition-all transform hover:scale-105"
@@ -126,7 +132,7 @@ const Blog: React.FC = () => {
           alt="Background abstrato"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-60"
         />
-        <div className="relative z-10 container mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
           <div className="relative z-10 flex flex-col text-center md:text-left items-center md:items-start">
             <h2 data-aos="fade-left" className="font-heading text-5xl md:text-7xl text-white mb-6">
               Baixe Agora!
@@ -137,13 +143,13 @@ const Blog: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://seuapp.com.br/webapp"
-                className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40" 
+                className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40"
               >
                 USAR NA WEB
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
-                className="font-sans bg-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-brand-yellow/40" 
+                className="font-sans bg-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-brand-yellow/40"
               >
                 BAIXAR O APP
               </a>
@@ -153,7 +159,7 @@ const Blog: React.FC = () => {
             <img
               src={phone}
               alt="Mockup do aplicativo Radar Social"
-              className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-20 h-[480px] md:h-[700px] w-auto"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-20 h-[480px] md:h-[600px] w-auto"
             />
           </div>
         </div>

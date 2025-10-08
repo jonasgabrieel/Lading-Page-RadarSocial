@@ -74,9 +74,7 @@ const QuemSomos: React.FC = () => {
   return (
     <>
       <section id="sobre" className="bg-brand-orange text-white py-20 px-4">
-        <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-
-
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
           <div className="text-center md:text-left">
             <h2 data-aos="fade-left" className="font-pt-sans text-5xl md:text-8xl mb-4">
               A inovação não se
@@ -97,8 +95,8 @@ const QuemSomos: React.FC = () => {
 
         </div>
       </section>
-      <section className="bg-white text-gray-800 py-20 px-4">
-        <div className="container mx-auto flex flex-col items-center">
+      <section id='sobreradar' className="bg-white text-gray-800 py-20 ">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <div className="flex items-center justify-center md:justify-start gap-4 mb-12 w-full">
             <span data-aos="fade-left" className="font-heading text-4xl md:text-6xl text-black">
               Sobre o
@@ -125,16 +123,15 @@ const QuemSomos: React.FC = () => {
           </div>
         </div>
       </section>
-      <section id="inovacao" className="bg-brand-yellow text-brand-purple py-20 px-4"> 
-        <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
-
+      <section id="inovacao" className="bg-brand-yellow text-brand-purple py-20 px-4">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
           <div className="flex flex-col gap-8 text-center md:text-left">
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <div>
                 <h2 data-aos="fade-left" className="font-heading text-6xl md:text-7xl leading-none">Radar</h2>
                 <h2 data-aos="fade-left" className="font-heading text-6xl md:text-7xl leading-none">Social</h2>
               </div>
-              <span  data-aos="fade-right"className="font-heading text-6xl md:text-7xl font-bold">é inovação!</span>
+              <span data-aos="fade-right" className="font-heading text-6xl md:text-7xl font-bold">é inovação!</span>
             </div>
 
             <p className="font-pt-sans text-justify text-xl md:text-2xl leading-relaxed max-w-lg mx-auto md:mx-0">
@@ -144,7 +141,7 @@ const QuemSomos: React.FC = () => {
             <div data-aos="flip-left" className="hidden md:flex justify-center md:justify-start items-center py-4">
               <img
                 src={seloODS}
-                className="h-28 w-auto" 
+                className="h-28 w-auto"
                 alt="Selo dos Objetivos de Desenvolvimento Sustentável"
               />
             </div>
@@ -178,68 +175,68 @@ const QuemSomos: React.FC = () => {
       </section>
 
       <section id="equipe" className="py-24 px-4 bg-white">
-  <div className="container mx-auto">
-    
-    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center mb-16">
-      <span data-aos="fade-left" className="font-heading text-4xl md:text-6xl text-black">
-        QUEM FAZ O
-      </span>
-      <div className="text-black">
-        <h2 data-aos="zoom-in" className="font-heading text-5xl md:text-6xl leading-none">Radar</h2>
-        <h2 data-aos="zoom-in"className="font-heading text-5xl md:text-6xl leading-none">Social</h2>
-      </div>
-    </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      {teamMembers.map((member) => (
-        <div 
-          key={member.name} 
-          className="relative group bg-brand-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl"
-        >
-          <div className="h-24 bg-brand-purple"></div>
-          
-          <img
-            src={member.imageUrl}
-            alt={`Foto de ${member.name}`}
-            className="absolute top-24 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 rounded-full object-cover border-4 border-white shadow-md"
-          />
-          <div className="pt-20 p-6 text-center">
-            <h4 className="font-sans font-bold text-xl text-brand-purple">
-              {member.name}
-            </h4>
-            <p className="font-sans text-brand-orange font-semibold text-sm mb-4">
-              {member.role}
-            </p>
-            <hr className="my-4 border-t border-gray-200" />
-            
-            <div className="flex justify-center space-x-4 pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              {member.socials.email && (
-                <a href={`mailto:${member.socials.email}`} title="Email" className="text-gray-500 hover:text-black transition-colors">
-                  <Mail size={24} />
-                </a>
-              )}
-              {member.socials.instagram && (
-                <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" title="Instagram" className="text-gray-500 hover:text-brand-yellow transition-colors">
-                  <Instagram size={24} />
-                </a>
-              )}
-              {member.socials.linkedin && (
-                <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn" className="text-gray-500 hover:text-brand-purple transition-colors">
-                  <Linkedin size={24} />
-                </a>
-              )}
-              {member.socials.lattes && (
-                <a href={member.socials.lattes} target="_blank" rel="noopener noreferrer" title="Currículo Lattes" className="text-gray-500 hover:text-brand-orange transition-colors">
-                  <GraduationCap size={24} />
-                </a>
-              )}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center mb-16">
+            <span data-aos="fade-left" className="font-heading text-4xl md:text-6xl text-black">
+              QUEM FAZ O
+            </span>
+            <div className="text-black">
+              <h2 data-aos="zoom-in" className="font-heading text-5xl md:text-6xl leading-none">Radar</h2>
+              <h2 data-aos="zoom-in" className="font-heading text-5xl md:text-6xl leading-none">Social</h2>
             </div>
           </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {teamMembers.map((member) => (
+              <div
+                key={member.name}
+                className="relative group bg-brand-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl"
+              >
+                <div className="h-24 bg-brand-purple"></div>
+
+                <img
+                  src={member.imageUrl}
+                  alt={`Foto de ${member.name}`}
+                  className="absolute top-24 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 rounded-full object-cover border-4 border-white shadow-md"
+                />
+                <div className="pt-20 p-6 text-center">
+                  <h4 className="font-sans font-bold text-xl text-brand-purple">
+                    {member.name}
+                  </h4>
+                  <p className="font-sans text-brand-orange font-semibold text-sm mb-4">
+                    {member.role}
+                  </p>
+                  <hr className="my-4 border-t border-gray-200" />
+
+                  <div className="flex justify-center space-x-4 pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {member.socials.email && (
+                      <a href={`mailto:${member.socials.email}`} title="Email" className="text-gray-500 hover:text-black transition-colors">
+                        <Mail size={24} />
+                      </a>
+                    )}
+                    {member.socials.instagram && (
+                      <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" title="Instagram" className="text-gray-500 hover:text-brand-yellow transition-colors">
+                        <Instagram size={24} />
+                      </a>
+                    )}
+                    {member.socials.linkedin && (
+                      <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" title="LinkedIn" className="text-gray-500 hover:text-brand-purple transition-colors">
+                        <Linkedin size={24} />
+                      </a>
+                    )}
+                    {member.socials.lattes && (
+                      <a href={member.socials.lattes} target="_blank" rel="noopener noreferrer" title="Currículo Lattes" className="text-gray-500 hover:text-brand-orange transition-colors">
+                        <GraduationCap size={24} />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
     </>
   );
