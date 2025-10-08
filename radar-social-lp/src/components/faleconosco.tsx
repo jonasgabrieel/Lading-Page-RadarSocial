@@ -22,10 +22,10 @@ const FaleConosco: React.FC = () => {
     <section id="fale-conosco" className="bg-brand-purple text-gray-800 py-20 px-4">
       <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="flex flex-col text-center md:text-left">
-          <h2 className="font-sans text-xl text-brand-orange mb-4">
+          <h2 data-aos="fade-left" className="font-sans text-xl text-brand-orange mb-4">
             FALE CONOSCO
           </h2>
-          <p className="font-heading text-5xl md:text-6xl text-white mb-8">
+          <p data-aos="fade-up" className="font-heading text-5xl md:text-6xl text-white mb-8">
             Tire suas dúvidas!
           </p>
 
@@ -62,14 +62,14 @@ const FaleConosco: React.FC = () => {
             <button
               type="submit"
               disabled={state.submitting}
-              className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 self-start disabled:bg-gray-400 disabled:cursor-not-allowed"
+              className="font-sans bg-brand-orange text-black text-lg px-18 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 self-start hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40"
             >
               {state.submitting ? 'Enviando...' : 'Enviar'}
             </button>
           </form>
         </div>
 
-        <div className="hidden md:flex items-center justify-center">
+        <div data-aos="flip-left" className="hidden md:flex items-center justify-center">
           <img
             src={FaleImg}
             alt="Pessoas em uma reunião de trabalho"

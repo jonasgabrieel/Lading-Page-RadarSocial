@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
 
         <a
           href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
-          className="hidden md:inline-block bg-brand-yellow text-slate-900 font-semibold px-6 py-2.5 rounded-full shadow-sm transition-all duration-300 hover:bg-opacity-90 hover:shadow-md hover:scale-105"
+          className="hidden md:inline-block bg-brand-yellow text-slate-900 font-semibold px-6 py-2.5 rounded-full shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-brand-yellow/40"
         >
           Baixar App
         </a>

@@ -37,27 +37,27 @@ const Blog: React.FC = () => {
 
           <div className="flex-1 text-center md:text-left space-y-6">
 
-            <div className="flex justify-center md:justify-start gap-4">
+            <div data-aos="zoom-in" className="flex justify-center md:justify-start gap-4">
               <span className="bg-white text-brand-orange font-semibold px-4 py-2 rounded-full shadow-md">
                 Tecnologia
               </span>
-              <span className="bg-brand-orange text-brand-purple font-semibold px-4 py-2 rounded-full shadow-md">
+              <span data-aos="zoom-in" className="bg-brand-orange text-brand-purple font-semibold px-4 py-2 rounded-full shadow-md">
                 Inovação
               </span>
-              <span className="bg-brand-purple text-white font-semibold px-4 py-2 rounded-full shadow-md">
+              <span data-aos="zoom-in" className="bg-brand-purple text-white font-semibold px-4 py-2 rounded-full shadow-md">
                 Sociedade
               </span>
             </div>
 
-            <h1 className="font-heading text-6xl md:text-8xl text-white leading-tight">
+            <h1 data-aos="fade-right" className="font-heading text-6xl md:text-8xl text-white leading-tight">
               Blog
             </h1>
-            <p className="font-pt-sans text-2xl text-brand-purple max-w-lg md:max-w-md mx-auto md:mx-0">
+            <p data-aos="fade-left" className="font-pt-sans text-2xl text-brand-purple max-w-lg md:max-w-md mx-auto md:mx-0">
               Veja artigos, notícias e atualizações sobre o Radar Social e ações de Inovação Social na UFS.
             </p>
           </div>
 
-          <div className="flex-1 flex justify-center md:justify-end mt-8 md:mt-0">
+          <div data-aos="fade-left" className="flex-1 flex justify-center md:justify-end mt-8 md:mt-0">
             <img
               src={blogImage}
               alt="Pessoas lendo e colaborando"
@@ -113,7 +113,7 @@ const Blog: React.FC = () => {
           </div>
           <div className="mt-16 flex justify-center">
             <button
-              className="bg-brand-purple text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-brand-purple/90 transition-all transform hover:scale-105" // 'hover:bg-opacity-90' melhorado
+              className="bg-brand-purple text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-brand-purple/90 transition-all transform hover:scale-105"
             >
               Ver mais matérias
             </button>
@@ -128,22 +128,22 @@ const Blog: React.FC = () => {
         />
         <div className="relative z-10 container mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div className="relative z-10 flex flex-col text-center md:text-left items-center md:items-start">
-            <h2 className="font-heading text-5xl md:text-7xl text-white mb-6">
+            <h2 data-aos="fade-left" className="font-heading text-5xl md:text-7xl text-white mb-6">
               Baixe Agora!
             </h2>
-            <p className="font-pt-sans text-xl md:text-2xl text-white leading-relaxed max-w-md mb-8">
+            <p data-aos="fade-right" className="font-pt-sans text-xl md:text-2xl text-white leading-relaxed max-w-md mb-8">
               Nascemos do desejo de transformar conhecimento científico em impacto real!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://seuapp.com.br/webapp"
-                className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105" // Cor do texto ajustada
+                className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40" 
               >
                 USAR NA WEB
               </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
-                className="font-sans bg-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105" // Cor do texto ajustada
+                className="font-sans bg-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-brand-yellow/40" 
               >
                 BAIXAR O APP
               </a>

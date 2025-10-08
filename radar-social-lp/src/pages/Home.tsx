@@ -39,16 +39,16 @@ const Home: React.FC = () => {
         <div className="relative z-10 container mx-auto flex flex-col md:flex-row items-center justify-center gap-16">
 
           <div className="flex-1 text-center md:text-left">
-            <h1 className="font-heading text-5xl md:text-7xl text-white leading-tight mb-6">
+            <h1 data-aos="fade-left" className="font-heading text-5xl md:text-7xl text-white leading-tight mb-6">
               O que é o <br />Radar Social?
             </h1>
-            <p className="font-sans text-lg text-justify md:text-left md:text-xl text-white mb-10 max-w-xl mx-auto md:mx-0">
+            <p data-aos="fade-right" className="font-sans text-lg text-justify md:text-left md:text-xl text-white mb-10 max-w-xl mx-auto md:mx-0">
               O Radar Social é um aplicativo desenvolvido a partir da pesquisa acadêmica que criou a escala SRL (Social Readiness Level) – uma metodologia inédita para mapear e avaliar o nível de maturidade de projetos de inovação social. Nascemos do desejo de transformar conhecimento científico em impacto real.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
                 href="https://seuapp.com.br/download"
-                className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105"
+                className="font-sans bg-brand-orange text-black text-lg px-8 py-3 rounded-full font-bold shadow-md hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40 transition-all duration-300 transform"
               >
                 USAR NA WEB
               </a>
@@ -56,14 +56,14 @@ const Home: React.FC = () => {
                 href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-sans bg-brand-yellow border-2 border-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold hover:bg-brand-orange hover:text-black transition-all duration-300 transform hover:scale-105"
+                className="font-sans bg-brand-yellow border-2 border-brand-yellow text-black text-lg px-8 py-3 rounded-full font-bold hover:scale-105 hover:shadow-lg hover:shadow-brand-yellow/80 transition-all duration-300 transform"
               >
                 BAIXAR O APP
               </a>
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center gap-6">
+          <div data-aos="flip-left" className="flex-1 flex flex-col items-center gap-6">
             <img
               src={homeImage}
               alt="Ilustração do Radar Social"
@@ -88,13 +88,13 @@ const Home: React.FC = () => {
         <div className="relative z-10 container mx-auto grid md:grid-cols-2 gap-16 items-center">
 
           <div>
-            <h1 className="font-heading text-5xl md:text-7xl text-brand-yellow mb-12">
+            <h1 data-aos="fade-right" className="font-heading text-5xl md:text-7xl text-brand-yellow mb-12">
               Como Funciona?
             </h1>
-            <h2 className="font-pt-sans font-bold text-2xl md:text-3xl text-white mb-8">
+            <h2 data-aos="fade-left" className="font-pt-sans font-bold text-2xl md:text-3xl text-white mb-8">
               É simples assim:
             </h2>
-            <div className="flex flex-col gap-8">
+            <div data-aos="fade-up" className="flex flex-col gap-8">
               {steps.map((step, index) => (
                 <div key={index} className="flex gap-4">
                   <CheckCircle2 size={32} className="text-brand-yellow flex-shrink-0 mt-1" />
@@ -121,17 +121,17 @@ const Home: React.FC = () => {
           <div className="flex flex-col gap-8 text-center md:text-left">
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <div>
-                <h2 className="font-heading text-6xl md:text-7xl leading-none">Radar</h2>
-                <h2 className="font-heading text-6xl md:text-7xl leading-none">Social</h2>
+                <h2 data-aos="fade-left" className="font-heading text-6xl md:text-7xl leading-none">Radar</h2>
+                <h2 data-aos="fade-left" className="font-heading text-6xl md:text-7xl leading-none">Social</h2>
               </div>
-              <span className="font-heading text-6xl md:text-7xl font-bold">é inovação!</span>
+              <span data-aos="fade-right" className="font-heading text-6xl md:text-7xl font-bold">é inovação!</span>
             </div>
 
-            <p className="font-pt-sans text-justify text-xl md:text-2xl leading-relaxed max-w-lg mx-auto md:mx-0">
+            <p data-aos="fade-up" className="font-pt-sans text-justify text-xl md:text-2xl leading-relaxed max-w-lg mx-auto md:mx-0">
               Acreditamos que a inovação social é motor de mudança, e que, ao dar visibilidade e mensurar seu impacto, criamos caminhos mais sólidos para transformar realidades. O Radar Social está alinhado aos Objetivos de Desenvolvimento Sustentável:
             </p>
 
-            <div className="hidden md:flex justify-center md:justify-start items-center py-4">
+            <div data-aos="flip-left" className="hidden md:flex justify-center md:justify-start items-center py-4">
               <img
                 src={seloODS}
                 className="h-28 w-auto" 
@@ -142,7 +142,7 @@ const Home: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a
                 href="https://seuapp.com.br/download"
-                className="font-sans bg-brand-orange text-white text-lg px-8 py-3 rounded-full font-bold shadow-md hover:opacity-90 transition-all duration-300 transform hover:scale-105" // Corrigido 'font-pt-sans'
+                className="font-pt-sans bg-brand-orange text-white text-lg px-8 py-3 rounded-full font-bold shadow-md hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40" 
               >
                 USAR NA WEB
               </a>
@@ -150,7 +150,7 @@ const Home: React.FC = () => {
                 href="https://play.google.com/store/apps/details?id=com.cinttec.avalchek&pcampaignid=web_share"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-sans bg-black border-2 text-brand-yellow text-lg px-8 py-3 rounded-full font-bold hover:bg-brand-purple hover:text-white transition-all duration-300 transform hover:scale-105" // Corrigido 'font-pt-sans'
+                className="font-pt-sans bg-black border-2 text-brand-yellow text-lg px-8 py-3 rounded-full font-bold hover:scale-105 hover:shadow-lg hover:shadow-brand-orange/40" 
               >
                 BAIXAR O APP
               </a>
