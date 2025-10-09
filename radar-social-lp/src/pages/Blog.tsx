@@ -33,7 +33,7 @@ const Blog: React.FC = () => {
   return (
     <>
       <section className="bg-brand-yellow pt-24 pb-16 px-4 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
 
           <div className="flex-1 text-center md:text-left space-y-6">
 
@@ -67,9 +67,8 @@ const Blog: React.FC = () => {
         </div>
       </section>
 
-      <section id="blog-posts" className="bg-gray-50 py-20"> {/* 'px-4' removido */}
-        {/* Padrão de container responsivo aplicado */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="blog-posts" className="bg-gray-50 py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="mb-16 flex justify-center">
             <div className="flex gap-4 w-full max-w-xl">
@@ -94,7 +93,6 @@ const Blog: React.FC = () => {
               <div
                 key={index}
                 className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
-                // Adicionada animação 'fade-up' com delay em cascata para cada card
                 data-aos="fade-up"
                 data-aos-delay={(index % 3) * 100}
               >
@@ -132,7 +130,7 @@ const Blog: React.FC = () => {
           alt="Background abstrato"
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-60"
         />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
           <div className="relative z-10 flex flex-col text-center md:text-left items-center md:items-start">
             <h2 data-aos="fade-left" className="font-heading text-5xl md:text-7xl text-white mb-6">
               Baixe Agora!

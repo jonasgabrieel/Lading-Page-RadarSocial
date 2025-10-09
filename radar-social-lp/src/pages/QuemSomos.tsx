@@ -74,7 +74,7 @@ const QuemSomos: React.FC = () => {
   return (
     <>
       <section id="sobre" className="bg-brand-orange text-white py-20 px-4">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
           <div className="text-center md:text-left">
             <h2 data-aos="fade-left" className="font-pt-sans text-5xl md:text-8xl mb-4">
               A inovação não se
@@ -96,7 +96,7 @@ const QuemSomos: React.FC = () => {
         </div>
       </section>
       <section id='sobreradar' className="bg-white text-gray-800 py-20 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <div className="flex items-center justify-center md:justify-start gap-4 mb-12 w-full">
             <span data-aos="fade-left" className="font-heading text-4xl md:text-6xl text-black">
               Sobre o
@@ -124,7 +124,7 @@ const QuemSomos: React.FC = () => {
         </div>
       </section>
       <section id="inovacao" className="bg-brand-yellow text-brand-purple py-20 px-4">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
           <div className="flex flex-col gap-8 text-center md:text-left">
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
               <div>
@@ -141,7 +141,7 @@ const QuemSomos: React.FC = () => {
             <div data-aos="flip-left" className="hidden md:flex justify-center md:justify-start items-center py-4">
               <img
                 src={seloODS}
-                className="h-28 w-auto"
+                className="h-24 w-auto"
                 alt="Selo dos Objetivos de Desenvolvimento Sustentável"
               />
             </div>
@@ -168,14 +168,14 @@ const QuemSomos: React.FC = () => {
             <img
               src={PhoneImage2}
               alt="Pessoas colaborando em um projeto de inovação"
-              className="max-w-full h-auto"
+              className="w-200 h-auto"
             />
           </div>
         </div>
       </section>
 
       <section id="equipe" className="py-24 px-4 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center mb-16">
             <span data-aos="fade-left" className="font-heading text-4xl md:text-6xl text-black">

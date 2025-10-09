@@ -36,7 +36,7 @@ const Home: React.FC = () => {
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-70"
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
 
           <div className="flex-1 text-center md:text-left">
             <h1 data-aos="fade-left" className="font-heading text-5xl md:text-7xl text-white leading-tight mb-6">
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-70"
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-40">
 
           <div>
             <h1 data-aos="fade-right" className="font-heading text-5xl md:text-7xl text-brand-yellow mb-12">
@@ -116,7 +116,7 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section id="inovacao" className="bg-brand-yellow text-brand-purple py-20 px-4">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
 
           <div className="flex flex-col gap-8 text-center md:text-left">
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
@@ -134,7 +134,7 @@ const Home: React.FC = () => {
             <div data-aos="flip-left" className="hidden md:flex justify-center md:justify-start items-center py-4">
               <img
                 src={seloODS}
-                className="h-28 w-auto"
+                className="h-24 w-auto"
                 alt="Selo dos Objetivos de Desenvolvimento Sustentável"
               />
             </div>
@@ -161,7 +161,7 @@ const Home: React.FC = () => {
             <img
               src={PhoneImage2}
               alt="Pessoas colaborando em um projeto de inovação"
-              className="max-w-full h-auto"
+              className="w-180 h-auto"
             />
           </div>
         </div>

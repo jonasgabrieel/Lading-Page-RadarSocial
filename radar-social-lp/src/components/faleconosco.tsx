@@ -20,7 +20,7 @@ const FaleConosco: React.FC = () => {
 
   return (
     <section id="fale-conosco" className="bg-brand-purple text-gray-800 py-20 px-4">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-46">
         <div className="flex flex-col text-center md:text-left">
           <h2 data-aos="fade-left" className="font-sans text-xl text-brand-orange mb-4">
             FALE CONOSCO
@@ -73,7 +73,7 @@ const FaleConosco: React.FC = () => {
           <img
             src={FaleImg}
             alt="Pessoas em uma reunião de trabalho"
-            className="rounded-lg max-w-full h-auto"
+            className="rounded-lg w-200 h-auto"
           />
         </div>
       </div>
