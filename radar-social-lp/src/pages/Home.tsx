@@ -116,7 +116,7 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section id="inovacao" className="bg-brand-yellow text-brand-purple py-20 px-4">
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-16">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-40">
 
           <div className="flex flex-col gap-8 text-center md:text-left">
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
@@ -161,7 +161,7 @@ const Home: React.FC = () => {
             <img
               src={PhoneImage2}
               alt="Pessoas colaborando em um projeto de inovação"
-              className="w-180 h-auto"
+              className="w-160 h-auto"
             />
           </div>
         </div>
